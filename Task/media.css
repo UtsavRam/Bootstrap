@@ -1,0 +1,7 @@
+@media(max-width:600px)
+{  
+    .banner-1-text {
+        margin-left: -70px;
+        font-size: 28px;
+    }
+}
