@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 200px;
+      margin-bottom: 20px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div style="padding: 20px;">
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://lapinozpizza.in/assets/wla_new/lapinoz/img/deals-banner.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="https://lapinozpizza.in/assets/wla_new/lapinoz/img/deals-banner.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="https://lapinozpizza.in/assets/wla_new/lapinoz/img/deals-banner.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="https://lapinozpizza.in/assets/wla_new/lapinoz/img/deals-banner.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="https://lapinozpizza.in/assets/wla_new/lapinoz/img/deals-banner.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="https://lapinozpizza.in/assets/wla_new/lapinoz/img/deals-banner.jpg" alt=""></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- slider 2 -->
+  <div style="padding: 20px;">
+    <div class="swiper-container mySwiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div>
+            <img src="https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/india.jpg">
+            <div>
+              <span>India</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div>
+            <img src="https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/india.jpg">
+            <div>
+              <span>India</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div>
+            <img src="https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/india.jpg">
+            <div>
+              <span>India</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div>
+            <img src="https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/india.jpg">
+            <div>
+              <span>India</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div>
+            <img src="https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/india.jpg">
+            <div>
+              <span>India</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div>
+            <img src="https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/india.jpg">
+            <div>
+              <span>India</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div>
+            <img src="https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/india.jpg">
+            <div>
+              <span>India</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div>
+            <img src="https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/india.jpg">
+            <div>
+              <span>India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper1 = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+      },
+      autoplay: {
+        delay: 3000,
+      },
+    });
+
+    var swiper2 = new Swiper(".mySwiper2", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+      },
+      autoplay: {
+        delay: 3000,
+      },
+    });
+  </script>
+</body>
+
+</html>
