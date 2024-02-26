@@ -1,0 +1,135 @@
+header {
+    background-color: rgb(4, 28, 69);
+    background-image: url(assets/hero-bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0 30px 0;
+}
+
+header nav {
+    background: rgba(4, 28, 69, 0.6);
+}
+
+.about-top .about-one:hover {
+    transition: 0.5s;
+    color: blue;
+    cursor: pointer;
+}
+
+.ovrflw {
+    overflow: hidden;
+}
+
+.all-srvc-card:hover img {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.all-srvc-card:hover .card-body h5 {
+    color: blue;
+    transition: 0.5s;
+}
+
+.call-to-action {
+    height: 100px;
+}
+
+.card-img-overlay {
+    top: 30%;
+
+}
+
+.carousel-item {
+    background: rgba(14, 29, 52, 0.6);
+}
+
+.carousel-caption img {
+    width: 30%;
+}
+
+.action {
+    background: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url(assets/cta-bg.jpg) center center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 130px 0;
+}
+
+.que {
+    cursor: pointer;
+}
+
+.panel {
+    display: none;
+}
+.banner-img
+{
+    background: url("https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/usp-banner.jpg");
+    background-size: cover;
+    position: relative;
+    height: 300px;
+    color: white;
+}
+.banner-text
+{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    background-color: rgb(0, 0, 0);
+    margin-top: -150px;
+    margin-left: 80px;
+}
+
+.baner-box-1
+{
+    width: 33.33%;
+    height: 250px;
+    color: black;
+    border-right: 1px solid black;
+}
+
+
+/* slider  banere in */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    background: #000;
+  }
+
+  .swiper-slide {
+    font-size: 18px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+  }
+
+  .parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .swiper-slide .title {
+    font-size: 41px;
+    font-weight: 300;
+  }
+
+  .swiper-slide .subtitle {
+    font-size: 21px;
+  }
+
+  .swiper-slide .text {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.3;
+  }
+  .inner-slider
+  {
+    margin-top: 180px;
+  }
