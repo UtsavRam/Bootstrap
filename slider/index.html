@@ -452,3 +452,105 @@
 </body>
 
 </html>
+
+
+<!-- Todo -->
+
+
+
+<!-- import React from 'react';
+import { useState } from 'react';
+
+const Initial = [
+  { id: 1, title: "Html1" },
+  { id: 2, title: "Html2" },
+  { id: 3, title: "Html3" },
+  { id: 4, title: "Html4" },
+];
+
+function Atodo() {
+  const [data, setData] = useState(Initial);
+  const [name, setName] = useState("");
+  const [edit, setEdit] = useState("");
+  const [editText, setEditText] = useState("");
+
+  const handleAdd = () => {
+    if (name.trim() !== "") {
+      setData([
+        ...data,
+        {
+          id: data.length + 1,
+          title:name
+        }
+      ]);
+      setName("");
+    } else {
+      alert("Enter Your Value...!");
+    }
+  };
+
+  const handleDelete = (id) => {
+    const updatedValue = data.filter((item) => item.id !== id);
+    setData(updatedValue);
+  };
+
+  const handleEdit = (editid,textid) => {
+    setEdit(editid);
+    setEditText(textid)
+  };
+
+  const handlesave = (userid2)=>
+  {
+    // const Ubdatedata =  data.map((v)=> 
+    //  v.id == userid ? {...v , title:text}:v
+    // );
+    // setData(Ubdatedata)
+    // setEdit(null)
+
+    if(editText.trim(userid2)!== ""){
+      setData(data.map((v)=> (v.id == userid2)?{...v,title:editText}:v))
+      setEdit(null)
+      setEditText("")
+
+    }
+  }
+
+ 
+  return (
+    <div className='App'>
+      <div>
+        <div className='mt-5'>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => { setName(e.target.value) }}
+          />
+          <button onClick={handleAdd}>Add</button>
+        </div>
+        {data.map((v) => (
+          <ul key={v.id}>
+            {edit == v.id ? (
+                <li>
+                    <input type="text"
+                    value={editText}
+                    onChange={(e)=> setEditText(e.target.value)}
+                    />
+                    <button onClick={()=> handlesave(v.id)}>Save</button>
+                    <button>Delete</button>
+                </li>
+            ) : 
+            (
+            <li>
+                {v.title}
+                <button onClick={()=> handleEdit(v.id,v.title)}>Edit</button>
+                <button onClick={()=> handleDelete(v.id)}>Delete</button>
+            </li>  
+            )}
+          </ul>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default Atodo; -->
