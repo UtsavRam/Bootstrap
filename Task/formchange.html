@@ -15,7 +15,7 @@ height: 100vh !important;
     </style>
 </head>
 <body>
-    <section class="h-100 h-custom" style="background-color: #8fc4b7;">
+    <section class="h-100 h-custom" style="background-color: #8fc4b7; padding-bottom: 70%;">
         <div class="container py-5 h-100">
           <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-lg-8 col-xl-6">
@@ -90,3 +90,112 @@ height: 100vh !important;
 
 </body>
 </html>
+
+<!-- React Todo -->
+<!-- import React, { useState } from 'react'
+
+function Api() {
+    const [inputdata,setInputdata]= useState('')
+    const [Items,setItems]= useState([])
+    const [togglebtn,setTogglebtn]= useState(true)
+    const [editvalue,setEditvalue]= useState(null)
+
+    const Additems = ()=> 
+    {
+      if(!inputdata){
+        alert('Plz Enter The input data value')
+      } else if(inputdata && !togglebtn){
+          setItems(
+            Items.map((e)=> {
+              if(e.id === editvalue){
+                  return{...e, name:inputdata}
+              }
+              return e;
+            })
+          )
+
+          setTogglebtn(true)
+
+          setInputdata('')
+    
+          setEditvalue(null)
+      }
+      else{
+        const Allinputdata = {id: new Date(), name: inputdata}
+        setItems([...Items,Allinputdata]);
+        setInputdata('')
+      }
+    }
+
+    const handeldelete = (index)=>
+    {
+       const Updatedata = Items.filter((elm)=>{
+         return  index !== elm.id
+       });
+       setItems(Updatedata)
+    }
+
+    const handeledit = (id)=>
+    {
+      let newvalue = Items.find((elm)=>{
+        return elm.id === id
+      })
+      console.log(newvalue);
+
+      setTogglebtn(false)
+
+      setInputdata(newvalue.name)
+
+      setEditvalue(id)
+
+      
+    }
+
+    const handelremove = ()=>
+    {
+      setItems([])
+    }
+   
+  return (
+    <>
+        <div className='main-div'>
+            <div className="child-div">
+                  <div className='Additems'>
+                      <input type="text" placeholder='✍ Add Items...'
+                      value={inputdata}
+                      onChange={(e)=> {setInputdata(e.target.value)}}/>
+
+                      {
+                         togglebtn ? <i className="fa-solid fa-plus" title='Add Items' onClick={Additems}></i> : <i className="fa-solid fa-pen-to-square" title='Ubda' onClick={Additems}></i>
+                      }
+                      
+                  </div>
+                  <div className='Showitems'>
+                    {
+                        Items.map((v)=>(
+                                <div className="echitems" key={v.id}>
+                                    <p>{v.name}</p>
+                                    <i className="fa-solid fa-pen-to-square" title='Edit Items'
+                                    onClick={()=> handeledit(v.id)}
+                                    ></i>
+                                    <i className="fa-solid fa-trash" title='Dellet Items'
+                                    onClick={()=> handeldelete(v.id)}
+                                    ></i>
+                                </div>
+                        ))
+                    }
+                   
+                  </div>
+                  <div className='showItems'>
+                        <div>
+                            <button className='btn btn-outline-primary mt-5' 
+                            onClick={handelremove}>Remove All</button>
+                       </div> 
+                  </div>
+            </div>
+        </div>
+    </>
+  )
+}
+
+export default Api -->
